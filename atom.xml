@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://darkness2001.github.io/"/>
-  <updated>2018-01-15T08:22:23.646Z</updated>
+  <updated>2018-01-15T08:55:00.411Z</updated>
   <id>https://darkness2001.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo快捷键</title>
+    <link href="https://darkness2001.github.io/2018/01/15/hexo%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://darkness2001.github.io/2018/01/15/hexo快捷键/</id>
+    <published>2018-01-15T08:30:38.000Z</published>
+    <updated>2018-01-15T08:55:00.411Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="执行如下命令安装Hexo："><a href="#执行如下命令安装Hexo：" class="headerlink" title="执行如下命令安装Hexo："></a>执行如下命令安装Hexo：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo</span><br></pre></td></tr></table></figure><h2 id="初始化然后，执行init命令初始化hexo-命令："><a href="#初始化然后，执行init命令初始化hexo-命令：" class="headerlink" title="初始化然后，执行init命令初始化hexo,命令："></a>初始化然后，执行init命令初始化hexo,命令：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure><h2 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate（hexo g）</span><br></pre></td></tr></table></figure><h2 id="清除静态网页"><a href="#清除静态网页" class="headerlink" title="清除静态网页"></a>清除静态网页</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure><h2 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h2><h3 id="启动本地服务，进行文章预览调试，命令："><a href="#启动本地服务，进行文章预览调试，命令：" class="headerlink" title="启动本地服务，进行文章预览调试，命令："></a>启动本地服务，进行文章预览调试，命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server（hexo s）</span><br></pre></td></tr></table></figure><p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p><h2 id="发布到git"><a href="#发布到git" class="headerlink" title="发布到git"></a>发布到git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy（hexo d）</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;执行如下命令安装Hexo：&quot;&gt;&lt;a href=&quot;#执行如下命令安装Hexo：&quot; class=&quot;headerlink&quot; title=&quot;执行如下命令安装Hexo：&quot;&gt;&lt;/a&gt;执行如下命令安装Hexo：&lt;/h2&gt;&lt;figure class=&quot;highlight bash
+      
+    
+    </summary>
+    
+    
+      <category term="hexo-快捷键" scheme="https://darkness2001.github.io/tags/hexo-%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown 语法</title>
