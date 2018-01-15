@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://darkness2001.github.io/"/>
-  <updated>2018-01-10T07:39:14.463Z</updated>
+  <updated>2018-01-15T08:22:23.646Z</updated>
   <id>https://darkness2001.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdown 语法</title>
+    <link href="https://darkness2001.github.io/2018/01/15/111/"/>
+    <id>https://darkness2001.github.io/2018/01/15/111/</id>
+    <published>2018-01-15T07:36:17.000Z</published>
+    <updated>2018-01-15T08:22:23.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试hexo，markdown 语法</p><p><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="noopener">语法链接地址</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;测试hexo，markdown 语法&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/markdown/3245829?fr=aladdin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;语法链接地址&lt;/a&gt;&lt;/p
+      
+    
+    </summary>
+    
+    
+      <category term="test1" scheme="https://darkness2001.github.io/tags/test1/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
