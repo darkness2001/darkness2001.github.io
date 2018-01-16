@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[hexo常用命令]]></title>
+    <url>%2F2018%2F01%2F15%2Fhexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[hexo环境安装123npm install hexo -g #安装 npm update hexo -g #升级 hexo init #初始化 简写12345hexo n "我的博客" == hexo new "我的博客" #新建文章hexo p == hexo publishhexo g == hexo generate#生成hexo s == hexo server #启动服务预览hexo d == hexo deploy#部署 服务器12345678hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。hexo server -s #静态模式hexo server -p 5000 #更改端口hexo server -i 192.168.1.1 #自定义 IPhexo clean #清除缓存 网页正常情况下可以忽略此条命令hexo g #生成静态网页hexo d #开始部署 监视文件变动12hexo generate #使用 Hexo 生成静态文件快速而且简单hexo generate --watch #监视文件变动 完成后部署123456两个命令的作用是相同的hexo generate --deployhexo deploy --generatehexo deploy -ghexo server -g 草稿1hexo publish [layout] &lt;title&gt; 模版123456789hexo new "postName" #新建文章hexo new page "pageName" #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）hexo deploy #将.deploy目录部署到GitHubhexo new [layout] &lt;title&gt;hexo new photo "My Gallery"hexo new "Hello World" --lang tw 变量 描述 layout 布局 title 标题 date 文件建立日期]]></content>
+      <tags>
+        <tag>hexo常用命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo快捷键]]></title>
+    <url>%2F2018%2F01%2F15%2Fhexo%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
+    <content type="text"><![CDATA[执行如下命令安装Hexo：1sudo npm install -g hexo 初始化然后，执行init命令初始化hexo,命令：1hexo init 生成静态页面1hexo generate（hexo g） 清除静态网页1hexo clean 本地启动启动本地服务，进行文章预览调试，命令： 1hexo server（hexo s） 浏览器输入http://localhost:4000 发布到git1hexo deploy（hexo d）]]></content>
+      <tags>
+        <tag>hexo-快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown 语法]]></title>
+    <url>%2F2018%2F01%2F15%2Fmarkdown%20%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[测试hexo，markdown 语法 语法链接地址 hexo next主题美化]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>markdown</tag>
+        <tag>next主题美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F01%2F09%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
