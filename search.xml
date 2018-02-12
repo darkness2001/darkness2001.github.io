@@ -1,117 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title><![CDATA[hexo常用命令]]></title>
-      <url>/2018/01/15/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</url>
-      <content type="html"><![CDATA[<h2 id="hexo环境安装"><a href="#hexo环境安装" class="headerlink" title="hexo环境安装"></a>hexo环境安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g <span class="comment">#安装  </span></span><br><span class="line">npm update hexo -g <span class="comment">#升级  </span></span><br><span class="line">hexo init <span class="comment">#初始化</span></span><br></pre></td></tr></table></figure>
-<h2 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">"我的博客"</span> == hexo new <span class="string">"我的博客"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo p == hexo publish</span><br><span class="line">hexo g == hexo generate<span class="comment">#生成</span></span><br><span class="line">hexo s == hexo server <span class="comment">#启动服务预览</span></span><br><span class="line">hexo d == hexo deploy<span class="comment">#部署</span></span><br></pre></td></tr></table></figure>
-<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo server <span class="comment">#Hexo 会监视文件变动并自动更新，您无须重启服务器。</span></span><br><span class="line">hexo server -s <span class="comment">#静态模式</span></span><br><span class="line">hexo server -p 5000 <span class="comment">#更改端口</span></span><br><span class="line">hexo server -i 192.168.1.1 <span class="comment">#自定义 IP</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment">#清除缓存 网页正常情况下可以忽略此条命令</span></span><br><span class="line">hexo g <span class="comment">#生成静态网页</span></span><br><span class="line">hexo d <span class="comment">#开始部署</span></span><br></pre></td></tr></table></figure>
-<h2 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate <span class="comment">#使用 Hexo 生成静态文件快速而且简单</span></span><br><span class="line">hexo generate --watch <span class="comment">#监视文件变动</span></span><br></pre></td></tr></table></figure>
-<h2 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">两个命令的作用是相同的</span><br><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br><span class="line"></span><br><span class="line">hexo deploy -g</span><br><span class="line">hexo server -g</span><br></pre></td></tr></table></figure>
-<h2 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="模版"><a href="#模版" class="headerlink" title="模版"></a>模版</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">"pageName"</span> <span class="comment">#新建页面</span></span><br><span class="line">hexo generate <span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></span><br><span class="line">hexo deploy <span class="comment">#将.deploy目录部署到GitHub</span></span><br><span class="line"></span><br><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line">hexo new photo <span class="string">"My Gallery"</span></span><br><span class="line">hexo new <span class="string">"Hello World"</span> --lang tw</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>变量</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>layout</td>
-<td style="text-align:center">布局</td>
-</tr>
-<tr>
-<td>title</td>
-<td style="text-align:center">标题</td>
-</tr>
-<tr>
-<td>date</td>
-<td style="text-align:center">文件建立日期</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-      
-        
-        <tags>
-            
-            <tag> hexo常用命令 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[hexo快捷键]]></title>
-      <url>/2018/01/15/hexo%E5%BF%AB%E6%8D%B7%E9%94%AE.html</url>
-      <content type="html"><![CDATA[<h2 id="执行如下命令安装Hexo："><a href="#执行如下命令安装Hexo：" class="headerlink" title="执行如下命令安装Hexo："></a>执行如下命令安装Hexo：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo</span><br></pre></td></tr></table></figure>
-<h2 id="初始化然后，执行init命令初始化hexo-命令："><a href="#初始化然后，执行init命令初始化hexo-命令：" class="headerlink" title="初始化然后，执行init命令初始化hexo,命令："></a>初始化然后，执行init命令初始化hexo,命令：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<h2 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate（hexo g）</span><br></pre></td></tr></table></figure>
-<h2 id="清除静态网页"><a href="#清除静态网页" class="headerlink" title="清除静态网页"></a>清除静态网页</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<h2 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h2><p>启动本地服务，进行文章预览调试，命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server（hexo s）</span><br></pre></td></tr></table></figure>
-<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
-<h2 id="发布到git"><a href="#发布到git" class="headerlink" title="发布到git"></a>发布到git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy（hexo d）</span><br></pre></td></tr></table></figure>
-]]></content>
-      
-        
-        <tags>
-            
-            <tag> hexo-快捷键 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[markdown 语法]]></title>
-      <url>/2018/01/15/markdown%20%E8%AF%AD%E6%B3%95.html</url>
-      <content type="html"><![CDATA[<p>测试hexo，markdown 语法</p>
-<p><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="noopener">语法链接地址</a></p>
-<p><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">hexo next主题美化1</a></p>
-<p><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">hexo next主题美化2</a></p>
-]]></content>
-      
-        
-        <tags>
-            
-            <tag> markdown </tag>
-            
-            <tag> hexo </tag>
-            
-            <tag> next主题美化 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2018/01/09/hello-world.html</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      
-        
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[hexo常用命令]]></title>
+    <url>%2F2018%2F01%2F15%2Fhexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</url>
+    <content type="text"><![CDATA[hexo环境安装123npm install hexo -g #安装 npm update hexo -g #升级 hexo init #初始化 简写12345hexo n "我的博客" == hexo new "我的博客" #新建文章hexo p == hexo publishhexo g == hexo generate#生成hexo s == hexo server #启动服务预览hexo d == hexo deploy#部署 服务器12345678hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。hexo server -s #静态模式hexo server -p 5000 #更改端口hexo server -i 192.168.1.1 #自定义 IPhexo clean #清除缓存 网页正常情况下可以忽略此条命令hexo g #生成静态网页hexo d #开始部署 监视文件变动12hexo generate #使用 Hexo 生成静态文件快速而且简单hexo generate --watch #监视文件变动 完成后部署123456两个命令的作用是相同的hexo generate --deployhexo deploy --generatehexo deploy -ghexo server -g 草稿1hexo publish [layout] &lt;title&gt; 模版123456789hexo new "postName" #新建文章hexo new page "pageName" #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）hexo deploy #将.deploy目录部署到GitHubhexo new [layout] &lt;title&gt;hexo new photo "My Gallery"hexo new "Hello World" --lang tw 变量 描述 layout 布局 title 标题 date 文件建立日期]]></content>
+      <tags>
+        <tag>hexo常用命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo快捷键]]></title>
+    <url>%2F2018%2F01%2F15%2Fhexo%E5%BF%AB%E6%8D%B7%E9%94%AE.html</url>
+    <content type="text"><![CDATA[执行如下命令安装Hexo：1sudo npm install -g hexo 初始化然后，执行init命令初始化hexo,命令：1hexo init 生成静态页面1hexo generate（hexo g） 清除静态网页1hexo clean 本地启动启动本地服务，进行文章预览调试，命令： 1hexo server（hexo s） 浏览器输入http://localhost:4000 发布到git1hexo deploy（hexo d）]]></content>
+      <tags>
+        <tag>hexo-快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown 语法]]></title>
+    <url>%2F2018%2F01%2F15%2Fmarkdown%20%E8%AF%AD%E6%B3%95.html</url>
+    <content type="text"><![CDATA[测试hexo，markdown 语法 语法链接地址 hexo next主题美化1 hexo next主题美化2]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>markdown</tag>
+        <tag>next主题美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F01%2F09%2Fhello-world.html</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
